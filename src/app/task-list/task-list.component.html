@@ -10,10 +10,10 @@
         <ng-template [ngIf]="item.editForm">
             <div class="editeInput">
                 <form action="submit" (submit)="handlUpdateTask($event, updatedTask.value, item.task)">
-                   using form submission <input #updatedTask type="text" value="{{item.task}}">
+                    <input #updatedTask type="text" value="{{item.task}}">using form submission
                 </form>
             </div>
-            using ngModul<input  [(ngModel)]="item.task" (keyup.enter)="handleNgModel()">
+            <input [(ngModel)]="item.task" (keyup.enter)="handleNgModel()">using ngModul
         </ng-template>
 
     </li>
