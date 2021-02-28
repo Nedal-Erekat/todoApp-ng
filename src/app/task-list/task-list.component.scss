@@ -1,0 +1,46 @@
+.tasks-list {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0;
+    width: 90%;
+    margin: 40px auto;
+    
+    li {
+        padding: 10px;
+        border-bottom: gray 1px solid;
+        list-style-type: none;
+    }
+}
+.taskInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editeInput {
+    // display: none;
+}
+
+.taskName {
+    padding: 10px;
+    height: 20px;
+}
+
+.btns {
+    button {
+        height: 100%;
+        width: 5em;
+        color: white;
+        font-weight: bold;
+        border: none;
+        margin: 0 5px;
+        border-radius: 4px;
+    }
+
+    .dele {
+        background: rgb(204, 94, 94);
+    }
+
+    .edit {
+        background: rgb(26, 170, 26);
+    }
+}

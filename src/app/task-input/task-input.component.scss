@@ -1,0 +1,28 @@
+.task-input-container {
+    border: gray 1px solid;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin: 0 auto;
+
+    :focus {
+        outline: none;
+    }
+
+    input {
+        border: none;
+        flex: 1 0 50%;
+    }
+
+    button {
+        height: 45px;
+        width: 4em;
+        color: white;
+        background: #1a73e8;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        border-radius: 4px;
+    }
+}
