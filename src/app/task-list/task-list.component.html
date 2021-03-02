@@ -1,19 +1,19 @@
 <ul class="tasks-list">
     <li *ngFor="let item of items">
         <div class="taskInfo">
-            <span class="taskName">{{item.task}}</span>
+            <span class="taskName">{{item.title}}</span>
             <div class="btns">
-                <button class="dele" (click)="deleteTask(item.task)">Delete</button>
-                <button class="edit" (click)="editTask(item.task)">Edit</button>
+                <button class="dele" (click)="deleteTask(item.title)">Delete</button>
+                <button class="edit" (click)="editTask(item.title)">Edit</button>
             </div>
         </div>
         <ng-template [ngIf]="item.editForm">
             <div class="editeInput">
                 <form action="submit" (submit)="handlUpdateTask($event, updatedTask.value, item.task)">
-                    <input #updatedTask type="text" value="{{item.task}}">using form submission
+                    <input #updatedTask type="text" value="{{item.title}}">using form submission
                 </form>
             </div>
-            <input [(ngModel)]="item.task" (keyup.enter)="handleNgModel()">using ngModul
+            <input [(ngModel)]="item.title" (keyup.enter)="handleNgModel()">using ngModul
         </ng-template>
 
     </li>

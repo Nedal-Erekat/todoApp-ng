@@ -1,0 +1,8 @@
+<p>jokes works!</p>
+<ul *ngIf="jokes">
+    <li *ngFor="let joke of jokes; let i = index" [attr.data-index]="i">
+        <h5>{{joke.type}}</h5>
+        <h3>{{joke.setup}}</h3>
+        <h3>{{joke.punchline}}</h3>
+    </li>
+</ul>

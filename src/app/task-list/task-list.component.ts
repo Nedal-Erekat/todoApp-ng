@@ -18,6 +18,8 @@ export class TaskListComponent {
 
   
   deleteTask (task: string) {
+    console.log('>>>>>>>>>>>>>',task);
+    
     this.delTask.emit(task);
   }
 

@@ -1,0 +1,24 @@
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+    li {
+        align-items: center;
+        background: rgb(156, 187, 243);
+        box-shadow: 0 0 5px black;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+        margin: 20px;
+        padding: 20px;
+    }
+}
