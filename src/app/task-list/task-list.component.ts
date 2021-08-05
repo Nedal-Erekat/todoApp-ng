@@ -17,9 +17,7 @@ export class TaskListComponent {
   ele: string = 'no way';
 
   
-  deleteTask (task: string) {
-    console.log('>>>>>>>>>>>>>',task);
-    
+  deleteTask (task: string) {   
     this.delTask.emit(task);
   }
 
@@ -31,18 +29,4 @@ export class TaskListComponent {
     event.preventDefault(); 
     this.handleEdit.emit({newTask, prev});
   }
-
-  handleNgModel() {
-    console.log(this.items, '<<<<<<<<<<<<<<<<<<');
-  }
-  
-  // handleNgModule() {
-  //   this.itemsChange.emit(this.items)
-  // }
-
-  // handlngModel(e: string) {
-  //   console.log(e);
-  //   console.log(this.ele);
-    
-  // }
 }

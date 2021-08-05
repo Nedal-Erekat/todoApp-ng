@@ -22,4 +22,12 @@ describe('TaskInputComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('addNewTask', () => {
+    it('should triger the jandleAddTask event', () => {
+      spyOn(component.handleAddTask, 'emit');
+      component.addNewTask('test');
+      expect(component.handleAddTask.emit).toHaveBeenCalled();
+    });
+  });
 });
